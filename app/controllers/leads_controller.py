@@ -53,7 +53,6 @@ def post_leads():
         db.session.add(leads)
         db.session.commit()
         return jsonify({
-            "id": leads.id,
             "name": leads.name,
             "email": leads.email,
             "creation_date": leads.creation_date,
